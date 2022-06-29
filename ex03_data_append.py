@@ -32,7 +32,7 @@ sample_2['기준년월'] = '2019-11'
 
 sample_2_code = pd.merge(left=sample_2, right=code_master, how='left', left_on='국적코드', right_on='국적코드')
 
-print(sample_2_code)
+print(sample_1_code_inner)
 print('*' * 50)
 
 print(sample_2_code)
@@ -54,4 +54,4 @@ print(concatTest)
 # to_excel 엑셀파일로 파일저장하기
 # concatTest.to_excel('./sample.xlsx')
 # index = False 로 자동 생성된 인덱스 번호 지우기
-concatTest.to_excel('./sample_index_false.xlsx', index=False)
+# concatTest.to_excel('./sample_index_false.xlsx', index=False)
